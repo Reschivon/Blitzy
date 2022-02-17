@@ -1,0 +1,53 @@
+row[bottom 30][right -120]:
+    Xuyang Chen
+    italic[Blitzy Demo]
+    10 Feb 2021
+
+
+bold[Short Description]
+column[left 30][bottom 10]:
+    Blitzy is a Tex alternative with a clean, readable syntax\
+    and simple rules that can be combined to form complex layouts
+
+
+bold[Longer Description]
+column[left 30]:
+    row[bottom 10]:
+        The motivation for Blitzy came because I was fed up with the ugliness of LaTeX\
+        escape characters and the the syntactical cruft it had accumulated over the years.\
+        Sure, with practice one can get very fast with LaTeX, but it can be rewritten, simpler\
+        (or so I thought)
+
+    row[bottom 10]:
+        I was taking CS240 (Discrete Math) at the time and wanted something that could compile\
+        instantly. Something that would update in real time as I typed. I chose Java because
+
+    column[left 30][bottom 10]:
+        bold[1)] It is not as slow as people think
+        bold[2)] Developer time is more valuable than run time
+        bold[3)] Java is my mother tongue and I can rapidly prototype with it
+
+    row[bottom 10]:
+        And with some PDFBox magic, Blitzy was born. And oh, it was as fast as promised.\
+        The modifiers and syntax turned out to be as simple as I thought. The only\
+        tedious thing was having to make dummy elements like italic[row[bottom 10]:] if you\
+        wanted breaks between paragraphs. But with a simple macro language these things can\
+        be replaced with italic[paragraph:]
+
+    column[bottom 10]:
+        But what ultimately made me realize Blitzy would not be a practical tool\
+        (without tons of effort on my part) was the expression typesetting. I made\
+        expressions modular and nestable so you can do things like:
+
+    row[bottom 30][left 50][top 20]:
+        sum[i=0][n] x+1
+        sum[i=0][sum[i=0][n] x+1] x+1
+        sum[i=0][sum[i=0][sum[i=0][n]] x+1] x+1
+
+    column[bottom 10]:
+        But there is an entire field dedicated to making this look good,\
+        and my manual tweaking just lacked the needed nuance. There are\
+        9000 corner cases that crop up 1% of the time that someone had to tediously\
+        repair in LaTeX. And -- I checked -- it was faster to do it in Google Docs\
+        anyway.
+
