@@ -2,4 +2,4 @@
 
 A small TeX alternative with more elegant syntax.
 
-In lieu of a readme, I have generated this (PDF)[output.pdf] from `syntax_sample` file.
+In lieu of readme, I have generated this [PDF](output.pdf) using Blitzy. The source is in the `syntax_sample` file.
